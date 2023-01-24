@@ -46,8 +46,6 @@ console.log(numbers);
 // console.log(numbers) geeft: [ 4, 8, 15, 87, 76 ];
 
 
-
-
 // ==========================================
 // Opdracht 3
 // Schrijf een script dat voor de maat van ieder vierkant in onderstaande array het volume uitrekent.
@@ -57,6 +55,15 @@ console.log(numbers);
 // ==========================================
 
 const squares = [30, 2, 8, 24, 11];
+console.log(squares);
+
+for (let i = 0; i < squares.length; i++) {
+    const volume = squares[i] * squares[i] * squares[i];
+
+    squares[i] = "Het volume van " + squares[i] + " is " + volume;
+}
+
+console.log(squares);
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
